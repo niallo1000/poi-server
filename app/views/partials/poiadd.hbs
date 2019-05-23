@@ -1,0 +1,45 @@
+<section class="ui raised segment">
+  <div class="ui grid ">
+    <div class="ui form six wide column">
+      <div class="ui stacked segment">
+        <form action="/poiadd" method="POST">
+            <div class="two fields">
+                <div class="field">
+                    <label>Name</label>
+                    <input placeholder="Name" type="text" name="name">
+                </div>
+                <div class="field">
+                    <label>Description</label>
+                    <input placeholder="description" type="text" name="description">
+                </div>
+            </div>
+            <div class="ui selection dropdown">
+                <input type="hidden" name="catagory">
+                <i class="dropdown icon"></i>
+                <div class="default text">Catagory</div>
+                <div class="menu">
+                    <div class="item" data-value="Sport & Recreation">Sport & Recreation</div>
+                    <div class="item" data-value="Dining">Dining</div>
+                    <div class="item" data-value="Drinks">Drinks</div>
+                    <div class="item" data-value="Birdwatching">Birdwatching</div>
+                    <div class="item" data-value="Walking">Walking</div>
+                    <div class="item" data-value="Shopping">Shopping</div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Latitude</label>
+                <input placeholder="latitude" type="text" name="latitude">
+            </div>
+            <div class="field">
+                <label>Longitude</label>
+                <input type="longitude" name="longitude">
+            </div>
+          <button class="ui blue submit button">Add POI</button>
+        </form>
+      </div>
+    </div>
+    <aside class="six wide column">
+        <img src="images/Wexford.jpg" class="ui medium image">
+    </aside>
+  </div>
+</section>

@@ -1,0 +1,74 @@
+{
+  "users": {
+    "_model": "User",
+    "homer": {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "email": "n@n.com",
+      "password": "nnnn"
+    },
+    "marge": {
+      "firstName": "Marge",
+      "lastName": "Simpson",
+      "email": "marge@simpson.com",
+      "password": "secret"
+    },
+    "bart": {
+      "firstName": "Bart",
+      "lastName": "Simpson",
+      "email": "bart@simpson.com",
+      "password": "secret"
+    }
+  },
+  "comments": {
+    "_model": "Comment",
+    "lisa": {
+      "firstName": "Lisa",
+      "lastName": "Simpson",
+      "office": "President"
+    },
+    "donald": {
+      "firstName": "Fred",
+      "lastName": "Simpson",
+      "office": "President"
+    }
+  },
+  "pois": {
+    "_model": "Poi",
+    "one": {
+      "name": "Rosslare",
+      "description": "Seaside Village",
+      "catagory": "sport",
+      "latitude": "52.2721",
+      "longitude": "-6.3892",
+      "donor": "->users.bart",
+      "candidate": "->comments.lisa"
+    },
+    "two": {
+      "name": "Tagoat",
+      "description": "Village",
+      "catagory": "sport",
+      "latitude": "52.2454",
+      "longitude": "6.3883",
+      "donor": "->users.bart",
+      "candidate": "->comments.lisa"
+    },
+    "three": {
+      "name": "Kilmore",
+      "description": "Fishinge",
+      "catagory": "sport",
+      "latitude": "52.1757",
+      "longitude": "6.5868",
+      "donor": "->users.bart",
+      "candidate": "->comments.lisa"
+    }
+  },
+
+  "admin": {
+    "_model": "Admin",
+    "one": {
+      "adminEmail": "admin@admin.com",
+      "adminPassword": "admin"
+    }
+  }
+}
